@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_screens"
+    app:startDestination="@id/authorizationFragment">
+
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.lesson_3_8.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_proofOfAgeFragment"
+            app:destination="@id/proofOfAgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/proofOfAgeFragment"
+        android:name="com.example.lesson_3_8.ProofOfAgeFragment"
+        android:label="fragment_proof_of_age"
+        tools:layout="@layout/fragment_proof_of_age" />
+</navigation>
